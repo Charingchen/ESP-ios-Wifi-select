@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainNavController.swift
 //  ESP ios Wifi select
 //
 //  Created by Hanxiang Chen on 2018-10-31.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainNavController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
+    
+
 
 
 }
-

@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		71777C0A218A2B3200D7F77C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71777C09218A2B3200D7F77C /* AppDelegate.swift */; };
-		71777C0C218A2B3200D7F77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71777C0B218A2B3200D7F77C /* ViewController.swift */; };
 		71777C0F218A2B3200D7F77C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71777C0D218A2B3200D7F77C /* Main.storyboard */; };
 		71777C11218A2B3500D7F77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71777C10218A2B3500D7F77C /* Assets.xcassets */; };
 		71777C14218A2B3500D7F77C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71777C12218A2B3500D7F77C /* LaunchScreen.storyboard */; };
+		71777C20218A314A00D7F77C /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71777C1F218A314A00D7F77C /* MainNavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		71777C06218A2B3200D7F77C /* ESP ios Wifi select.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ESP ios Wifi select.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71777C09218A2B3200D7F77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71777C0B218A2B3200D7F77C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		71777C0E218A2B3200D7F77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71777C10218A2B3500D7F77C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71777C13218A2B3500D7F77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71777C15218A2B3500D7F77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71777C1F218A314A00D7F77C /* MainNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 		71777C08218A2B3200D7F77C /* ESP ios Wifi select */ = {
 			isa = PBXGroup;
 			children = (
+				71777C1F218A314A00D7F77C /* MainNavController.swift */,
 				71777C09218A2B3200D7F77C /* AppDelegate.swift */,
-				71777C0B218A2B3200D7F77C /* ViewController.swift */,
 				71777C0D218A2B3200D7F77C /* Main.storyboard */,
 				71777C10218A2B3500D7F77C /* Assets.xcassets */,
 				71777C12218A2B3500D7F77C /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71777C0C218A2B3200D7F77C /* ViewController.swift in Sources */,
+				71777C20218A314A00D7F77C /* MainNavController.swift in Sources */,
 				71777C0A218A2B3200D7F77C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +283,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2HZ7ZK4F7;
 				INFOPLIST_FILE = "ESP ios Wifi select/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +301,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X2HZ7ZK4F7;
 				INFOPLIST_FILE = "ESP ios Wifi select/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

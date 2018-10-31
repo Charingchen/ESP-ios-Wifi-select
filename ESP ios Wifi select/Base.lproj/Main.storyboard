@@ -17,38 +17,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Weclome to ESP IOS Wifi Selection" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mKx-GH-QyT" userLabel="WelcomeText">
+                                <rect key="frame" x="41.5" y="185" width="292" height="68"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="292" id="QyU-RC-ONl"/>
+                                    <constraint firstAttribute="height" constant="68" id="zKu-zK-LkZ"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Click the buttom below to initiate Socket Connect to ESP" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qSI-yU-btw" userLabel="instruction">
+                                <rect key="frame" x="67.5" y="326" width="240" height="55"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="9go-9l-IqT"/>
+                                    <constraint firstAttribute="width" constant="240" id="p3b-qV-kVw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTh-eo-dih">
+                                <rect key="frame" x="147" y="443" width="81" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="hDh-2P-sTu"/>
+                                </constraints>
+                                <state key="normal" title="WIFI Scan"/>
+                                <connections>
+                                    <action selector="connectDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4jw-sF-sLo"/>
+                                    <action selector="wifiScanDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M3G-EE-qjd"/>
+                                </connections>
+                            </button>
                             <button contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLX-50-hKT">
-                                <rect key="frame" x="67.5" y="493" width="240" height="34"/>
+                                <rect key="frame" x="81.5" y="443" width="212" height="34"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="46R-ai-yJk"/>
-                                    <constraint firstAttribute="width" constant="240" id="Hkl-BB-YLz"/>
                                 </constraints>
                                 <state key="normal" title="Initiate Socket Connection"/>
+                                <connections>
+                                    <action selector="connectDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GMS-7s-xYv"/>
+                                </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Weclome to ESP IOS Wifi Selection" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mKx-GH-QyT">
-                                <rect key="frame" x="67" y="173" width="240" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Click the buttom below to initiate Socket Connect to ESP" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qSI-yU-btw">
-                                <rect key="frame" x="67" y="300" width="240" height="49.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="NLX-50-hKT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6JY-YH-cHo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NLX-50-hKT" secondAttribute="bottom" constant="140" id="S4f-HG-Ggi"/>
+                            <constraint firstItem="YTh-eo-dih" firstAttribute="top" secondItem="qSI-yU-btw" secondAttribute="bottom" constant="62" id="6js-5Z-RbT"/>
+                            <constraint firstItem="NLX-50-hKT" firstAttribute="top" secondItem="qSI-yU-btw" secondAttribute="bottom" constant="62" id="C2t-2v-eFX"/>
+                            <constraint firstItem="qSI-yU-btw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TjP-hs-H98"/>
+                            <constraint firstItem="mKx-GH-QyT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="121" id="YTj-da-mAe"/>
+                            <constraint firstItem="YTh-eo-dih" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cOf-rh-cxt"/>
+                            <constraint firstItem="qSI-yU-btw" firstAttribute="top" secondItem="mKx-GH-QyT" secondAttribute="bottom" constant="73" id="d2O-LI-aQW"/>
+                            <constraint firstItem="mKx-GH-QyT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rAd-f0-XMI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="NNn-m5-AKZ"/>
+                    <connections>
+                        <outlet property="initiConnButton" destination="NLX-50-hKT" id="pyh-ts-WGc"/>
+                        <outlet property="wifiScanButton" destination="YTh-eo-dih" id="EdK-Zt-nxt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

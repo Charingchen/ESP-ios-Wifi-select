@@ -10,9 +10,26 @@ import UIKit
 
 class MainNavController: UIViewController {
 
+    
+    @IBOutlet weak var initiConnButton: UIButton!
+    @IBOutlet weak var wifiScanButton: UIButton!
+    
+    @IBAction func connectDidTap(_ sender: Any) {
+        print("initi socket connection")
+        print("socket connected")
+        initiConnButton.isHidden = true
+        wifiScanButton.isHidden = false
+    
+    }
+    
+    @IBAction func wifiScanDidTap(_ sender: Any) {
+        print("wifi scan started")
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        wifiScanButton.isHidden = true
         // Do any additional setup after loading the view.
     }
     

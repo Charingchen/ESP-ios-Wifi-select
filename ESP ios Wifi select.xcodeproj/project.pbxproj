@@ -12,6 +12,9 @@
 		71777C11218A2B3500D7F77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71777C10218A2B3500D7F77C /* Assets.xcassets */; };
 		71777C14218A2B3500D7F77C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71777C12218A2B3500D7F77C /* LaunchScreen.storyboard */; };
 		71777C20218A314A00D7F77C /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71777C1F218A314A00D7F77C /* MainNavController.swift */; };
+		71777C22218A4DB500D7F77C /* WifiListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71777C21218A4DB500D7F77C /* WifiListScreenViewController.swift */; };
+		71777C25218A4DD600D7F77C /* wificell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71777C23218A4DD600D7F77C /* wificell.swift */; };
+		71777C26218A4DD600D7F77C /* ssid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71777C24218A4DD600D7F77C /* ssid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		71777C13218A2B3500D7F77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71777C15218A2B3500D7F77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71777C1F218A314A00D7F77C /* MainNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
+		71777C21218A4DB500D7F77C /* WifiListScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiListScreenViewController.swift; sourceTree = "<group>"; };
+		71777C23218A4DD600D7F77C /* wificell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wificell.swift; sourceTree = "<group>"; };
+		71777C24218A4DD600D7F77C /* ssid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ssid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,9 @@
 			children = (
 				71777C1F218A314A00D7F77C /* MainNavController.swift */,
 				71777C09218A2B3200D7F77C /* AppDelegate.swift */,
+				71777C21218A4DB500D7F77C /* WifiListScreenViewController.swift */,
+				71777C24218A4DD600D7F77C /* ssid.swift */,
+				71777C23218A4DD600D7F77C /* wificell.swift */,
 				71777C0D218A2B3200D7F77C /* Main.storyboard */,
 				71777C10218A2B3500D7F77C /* Assets.xcassets */,
 				71777C12218A2B3500D7F77C /* LaunchScreen.storyboard */,
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71777C26218A4DD600D7F77C /* ssid.swift in Sources */,
+				71777C25218A4DD600D7F77C /* wificell.swift in Sources */,
 				71777C20218A314A00D7F77C /* MainNavController.swift in Sources */,
 				71777C0A218A2B3200D7F77C /* AppDelegate.swift in Sources */,
+				71777C22218A4DB500D7F77C /* WifiListScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

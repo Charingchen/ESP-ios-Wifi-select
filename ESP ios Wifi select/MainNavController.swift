@@ -39,7 +39,8 @@ class MainNavController: UIViewController {
         //need this line to initial wifidelegate and point to wifilistScreenController
         self.wifidelegate = wifiVC
         wifidelegate.didTapWifiScan(wifiList: listTosend)
-        present(wifiVC, animated: true, completion: nil)
+        //present(wifiVC, animated: true, completion: nil)
+        performSegue(withIdentifier: "MainNavToList", sender: sender)
         
     }
     

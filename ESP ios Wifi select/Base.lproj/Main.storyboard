@@ -95,22 +95,23 @@
                     <connections>
                         <outlet property="initiConnButton" destination="NLX-50-hKT" id="pyh-ts-WGc"/>
                         <outlet property="wifiScanButton" destination="YTh-eo-dih" id="EdK-Zt-nxt"/>
+                        <segue destination="hkO-bZ-W3f" kind="show" identifier="MainNavToList" id="SVs-mp-5Ur"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1132" y="134"/>
         </scene>
-        <!--Wifi List Screen View Controller-->
+        <!--Wifi List-->
         <scene sceneID="0CB-xC-vMF">
             <objects>
-                <viewController storyboardIdentifier="wifilistview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hkO-bZ-W3f" customClass="WifiListScreenViewController" customModule="ESP_ios_Wifi_select" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wifilistview" title="Wifi List" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hkO-bZ-W3f" customClass="WifiListScreenViewController" customModule="ESP_ios_Wifi_select" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PsC-tp-GxQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ymr-Mx-RrQ">
-                                <rect key="frame" x="0.0" y="30" width="375" height="637"/>
+                                <rect key="frame" x="0.0" y="74" width="375" height="593"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="wificell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="wificell" rowHeight="60" id="vHW-h3-9KM" customClass="wificell" customModule="ESP_ios_Wifi_select" customModuleProvider="target">
@@ -161,11 +162,61 @@
                     </view>
                     <connections>
                         <outlet property="tableview" destination="ymr-Mx-RrQ" id="hzS-UZ-lUt"/>
+                        <segue destination="jMc-gO-Dmy" kind="show" identifier="ListToPassword" id="T8G-F4-APP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZYV-il-WVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1839" y="134"/>
+        </scene>
+        <!--Password-->
+        <scene sceneID="vmw-fS-5XD">
+            <objects>
+                <viewController storyboardIdentifier="password" title="Password" id="jMc-gO-Dmy" customClass="passwordViewController" customModule="ESP_ios_Wifi_select" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ye-uC-NnN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please enter password for" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xO9-qZ-LzT">
+                                <rect key="frame" x="86" y="231" width="193" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SM1-Xz-e5a">
+                                <rect key="frame" x="91" y="282" width="172" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXh-lh-k7Z">
+                                <rect key="frame" x="129" y="341" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passwordEntered:" destination="jMc-gO-Dmy" eventType="editingDidEnd" id="cGY-20-lTi"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEE-r5-mFw">
+                                <rect key="frame" x="159" y="426" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Enter"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sqU-m4-4AN"/>
+                    </view>
+                    <connections>
+                        <outlet property="ssidTextField" destination="SM1-Xz-e5a" id="SPR-G5-tlK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIu-fX-nB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2557.5999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

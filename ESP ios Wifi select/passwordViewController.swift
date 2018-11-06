@@ -9,26 +9,34 @@
 import UIKit
 var ssid: Ssid?
 class passwordViewController: UIViewController {
-
+    
+    @IBOutlet weak var ssidTextField: UITextView!
+    @IBOutlet weak var passwordEntered: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let wifiListVC = storyboard?.instantiateViewController(withIdentifier: "wifilistview") as! WifiListScreenViewController
         wifiListVC.ssidDelegate = self
         ssidTextField.text = ssid?.id
         
-    }
-    
-    @IBOutlet weak var ssidTextField: UITextView!
-    
-    @IBAction func passwordEntered(_ sender: Any) {
+        passwordEntered.delegate = self
         
     }
     
-
+    @IBAction func sendDidTap(_ sender: Any) {
+        //initiate socket socket transfer
+        print("Password input: \(passwordEntered.text!) for \(ssid!.id)")
+    }
+    
 }
 
-extension passwordViewController : ssidSelectDelegate{
+extension passwordViewController : ssidSelectDelegate, UITextFieldDelegate{
     func didTapSSID(ssidInfo: Ssid) {
         ssid = ssidInfo
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

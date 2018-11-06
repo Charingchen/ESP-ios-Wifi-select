@@ -177,40 +177,65 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Please enter password for" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xO9-qZ-LzT">
-                                <rect key="frame" x="86" y="231" width="193" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please enter password for" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xO9-qZ-LzT">
+                                <rect key="frame" x="82" y="234" width="211" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="7Nt-gx-0JH"/>
+                                    <constraint firstAttribute="height" constant="34" id="U1m-1C-bh2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SM1-Xz-e5a">
-                                <rect key="frame" x="91" y="282" width="172" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SM1-Xz-e5a">
+                                <rect key="frame" x="77.5" y="288" width="220" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="Cjm-yM-EOX"/>
+                                    <constraint firstAttribute="height" constant="40" id="dGs-Yy-aQJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXh-lh-k7Z">
-                                <rect key="frame" x="129" y="341" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXh-lh-k7Z">
+                                <rect key="frame" x="88" y="348" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8XT-s1-2GD"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="passwordEntered:" destination="jMc-gO-Dmy" eventType="editingDidEnd" id="cGY-20-lTi"/>
-                                </connections>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="light" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEE-r5-mFw">
-                                <rect key="frame" x="159" y="426" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEE-r5-mFw">
+                                <rect key="frame" x="99" y="428" width="177" height="30"/>
+                                <color key="backgroundColor" red="0.46221965549999999" green="0.94237786530000001" blue="0.073928050699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="yzw-zj-HeX"/>
+                                </constraints>
+                                <color key="tintColor" red="0.46221965551376343" green="0.94237786531448364" blue="0.073928050696849823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Send Via Socket">
+                                    <color key="titleColor" red="0.036056671291589737" green="0.29394781589508057" blue="0.98471766710281372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendDidTap:" destination="jMc-gO-Dmy" eventType="touchUpInside" id="Fbh-xP-pzB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xO9-qZ-LzT" firstAttribute="centerX" secondItem="2ye-uC-NnN" secondAttribute="centerX" id="09n-f0-FK6"/>
+                            <constraint firstItem="SM1-Xz-e5a" firstAttribute="centerX" secondItem="2ye-uC-NnN" secondAttribute="centerX" id="B4x-4Y-9gG"/>
+                            <constraint firstItem="DEE-r5-mFw" firstAttribute="centerX" secondItem="2ye-uC-NnN" secondAttribute="centerX" id="Fcz-mJ-Zgp"/>
+                            <constraint firstItem="DEE-r5-mFw" firstAttribute="top" secondItem="TXh-lh-k7Z" secondAttribute="bottom" constant="50" id="Rys-qX-YNR"/>
+                            <constraint firstItem="xO9-qZ-LzT" firstAttribute="top" secondItem="sqU-m4-4AN" secondAttribute="top" constant="170" id="S8x-be-1TF"/>
+                            <constraint firstItem="TXh-lh-k7Z" firstAttribute="top" secondItem="SM1-Xz-e5a" secondAttribute="bottom" constant="20" id="arI-3c-sDA"/>
+                            <constraint firstItem="SM1-Xz-e5a" firstAttribute="top" secondItem="xO9-qZ-LzT" secondAttribute="bottom" constant="20" id="cpc-B2-SpA"/>
+                            <constraint firstItem="TXh-lh-k7Z" firstAttribute="centerX" secondItem="2ye-uC-NnN" secondAttribute="centerX" id="qU2-R5-R3m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="sqU-m4-4AN"/>
                     </view>
                     <connections>
+                        <outlet property="passwordEntered" destination="TXh-lh-k7Z" id="YrH-GO-f8h"/>
                         <outlet property="ssidTextField" destination="SM1-Xz-e5a" id="SPR-G5-tlK"/>
                     </connections>
                 </viewController>

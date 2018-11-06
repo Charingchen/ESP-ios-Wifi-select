@@ -20,6 +20,7 @@ class passwordViewController: UIViewController {
         ssidTextField.text = ssid?.id
         
         passwordEntered.delegate = self
+        passwordEntered.isSecureTextEntry = true
         
     }
     

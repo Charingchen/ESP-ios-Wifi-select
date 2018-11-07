@@ -197,10 +197,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXh-lh-k7Z">
-                                <rect key="frame" x="88" y="348" width="200" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXh-lh-k7Z">
+                                <rect key="frame" x="87.5" y="348" width="200" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="8XT-s1-2GD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="8XT-s1-2GD"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -210,7 +210,7 @@
                                 <rect key="frame" x="99" y="428" width="177" height="30"/>
                                 <color key="backgroundColor" red="0.46221965549999999" green="0.94237786530000001" blue="0.073928050699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="yzw-zj-HeX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="177" id="yzw-zj-HeX"/>
                                 </constraints>
                                 <color key="tintColor" red="0.46221965551376343" green="0.94237786531448364" blue="0.073928050696849823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Send Via Socket">

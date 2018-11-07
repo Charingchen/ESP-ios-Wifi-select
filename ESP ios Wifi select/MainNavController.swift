@@ -37,10 +37,11 @@ class MainNavController: UIViewController {
         //Set up wifiListScreenViewController
         let wifiVC = storyboard?.instantiateViewController(withIdentifier: "wifilistview") as! WifiListScreenViewController
         //need this line to initial wifidelegate and point to wifilistScreenController
-        self.wifidelegate = wifiVC
-        wifidelegate.didTapWifiScan(wifiList: listTosend)
-        //present(wifiVC, animated: true, completion: nil)
-        performSegue(withIdentifier: "MainNavToList", sender: sender)
+        // self.wifidelegate = wifiVC
+       // wifidelegate.didTapWifiScan(wifiList: listTosend)
+        wifiVC.ssidList = listTosend
+        present(wifiVC, animated: true, completion: nil)
+        //performSegue(withIdentifier: "MainNavToList", sender: sender)
         
     }
     

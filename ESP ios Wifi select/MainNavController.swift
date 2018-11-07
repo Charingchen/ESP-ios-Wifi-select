@@ -9,13 +9,13 @@
 import UIKit
 
 // BOSS Delegate: protocol function setup to tell the intern what to do. A list of command for Interns
-protocol wifiInfoDelegate {
-    func didTapWifiScan (wifiList: [Ssid])
-}
+//protocol wifiInfoDelegate {
+//    func didTapWifiScan (wifiList: [Ssid])
+//}
 
 class MainNavController: UIViewController {
     //Need this delegate variable to pass from BOSS to Intern
-    var wifidelegate: wifiInfoDelegate!
+    //var wifidelegate: wifiInfoDelegate!
     
     @IBOutlet weak var initiConnButton: UIButton!
     @IBOutlet weak var wifiScanButton: UIButton!
@@ -39,6 +39,8 @@ class MainNavController: UIViewController {
         //need this line to initial wifidelegate and point to wifilistScreenController
         // self.wifidelegate = wifiVC
        // wifidelegate.didTapWifiScan(wifiList: listTosend)
+        
+        
         wifiVC.ssidList = listTosend
         present(wifiVC, animated: true, completion: nil)
         //performSegue(withIdentifier: "MainNavToList", sender: sender)

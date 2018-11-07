@@ -57,10 +57,10 @@ extension WifiListScreenViewController : UITableViewDataSource,UITableViewDelega
     
     
 }
+//
+//extension WifiListScreenViewController :wifiInfoDelegate{
+//    func didTapWifiScan(wifiList: [Ssid]) {
+//        ssidList = wifiList
+//    }
 
-extension WifiListScreenViewController :wifiInfoDelegate{
-    func didTapWifiScan(wifiList: [Ssid]) {
-        ssidList = wifiList
-    }
-   
-}
+//}

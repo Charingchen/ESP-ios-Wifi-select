@@ -12,13 +12,13 @@ import UIKit
 
 
 //pass Ssid info to password view controller
-protocol ssidSelectDelegate{
-    func didTapSSID (ssidInfo: Ssid)
-}
+//protocol ssidSelectDelegate{
+//    func didTapSSID (ssidInfo: Ssid)
+//}
 
 class WifiListScreenViewController: UIViewController {
     var ssidList: [Ssid]?
-    var ssidDelegate : ssidSelectDelegate!
+    //var ssidDelegate : ssidSelectDelegate!
     @IBOutlet weak var tableview: UITableView!
     
     
@@ -50,9 +50,8 @@ extension WifiListScreenViewController : UITableViewDataSource,UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let wifi_info = ssidList![indexPath.row]
         let passwordVC = storyboard?.instantiateViewController(withIdentifier: "password") as! passwordViewController
-        self.ssidDelegate = passwordVC
-        ssidDelegate.didTapSSID(ssidInfo: wifi_info)
-        performSegue(withIdentifier: "ListToPassword", sender: self)
+        passwordVC.wifiInfo = wifi_info
+        present(passwordVC, animated: true, completion: nil)
     }
     
     

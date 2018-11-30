@@ -15,10 +15,14 @@
 		71777C22218A4DB500D7F77C /* WifiListScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71777C21218A4DB500D7F77C /* WifiListScreenViewController.swift */; };
 		71777C25218A4DD600D7F77C /* wificell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71777C23218A4DD600D7F77C /* wificell.swift */; };
 		71777C26218A4DD600D7F77C /* ssid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71777C24218A4DD600D7F77C /* ssid.swift */; };
+		7178AAAF21A495E800D05BE6 /* SocketCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7178AAAE21A495E800D05BE6 /* SocketCom.swift */; };
 		719F8D892190F615006A39D7 /* passwordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719F8D882190F615006A39D7 /* passwordViewController.swift */; };
+		9193C353E2FAC95B08110291 /* Pods_ESP_ios_Wifi_select.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8018967E17ADE2F300A1C19 /* Pods_ESP_ios_Wifi_select.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2ECF9A66D5F4A5E55905B1AF /* Pods-ESP ios Wifi select.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESP ios Wifi select.release.xcconfig"; path = "Pods/Target Support Files/Pods-ESP ios Wifi select/Pods-ESP ios Wifi select.release.xcconfig"; sourceTree = "<group>"; };
+		3569957FE8E93E8F240EB669 /* Pods-ESP ios Wifi select.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ESP ios Wifi select.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ESP ios Wifi select/Pods-ESP ios Wifi select.debug.xcconfig"; sourceTree = "<group>"; };
 		71777C06218A2B3200D7F77C /* ESP ios Wifi select.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ESP ios Wifi select.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71777C09218A2B3200D7F77C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71777C0E218A2B3200D7F77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,7 +33,9 @@
 		71777C21218A4DB500D7F77C /* WifiListScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiListScreenViewController.swift; sourceTree = "<group>"; };
 		71777C23218A4DD600D7F77C /* wificell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wificell.swift; sourceTree = "<group>"; };
 		71777C24218A4DD600D7F77C /* ssid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ssid.swift; sourceTree = "<group>"; };
+		7178AAAE21A495E800D05BE6 /* SocketCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketCom.swift; sourceTree = "<group>"; };
 		719F8D882190F615006A39D7 /* passwordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = passwordViewController.swift; sourceTree = "<group>"; };
+		B8018967E17ADE2F300A1C19 /* Pods_ESP_ios_Wifi_select.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ESP_ios_Wifi_select.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9193C353E2FAC95B08110291 /* Pods_ESP_ios_Wifi_select.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C6CF758B53BA50F89F2D1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8018967E17ADE2F300A1C19 /* Pods_ESP_ios_Wifi_select.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71777BFD218A2B3200D7F77C = {
 			isa = PBXGroup;
 			children = (
 				71777C08218A2B3200D7F77C /* ESP ios Wifi select */,
 				71777C07218A2B3200D7F77C /* Products */,
+				F1E900918584FD9C34CCB8D7 /* Pods */,
+				28C6CF758B53BA50F89F2D1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,8 +89,18 @@
 				71777C10218A2B3500D7F77C /* Assets.xcassets */,
 				71777C12218A2B3500D7F77C /* LaunchScreen.storyboard */,
 				71777C15218A2B3500D7F77C /* Info.plist */,
+				7178AAAE21A495E800D05BE6 /* SocketCom.swift */,
 			);
 			path = "ESP ios Wifi select";
+			sourceTree = "<group>";
+		};
+		F1E900918584FD9C34CCB8D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3569957FE8E93E8F240EB669 /* Pods-ESP ios Wifi select.debug.xcconfig */,
+				2ECF9A66D5F4A5E55905B1AF /* Pods-ESP ios Wifi select.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 71777C18218A2B3500D7F77C /* Build configuration list for PBXNativeTarget "ESP ios Wifi select" */;
 			buildPhases = (
+				53AE050D19EA56FB8BD70E3D /* [CP] Check Pods Manifest.lock */,
 				71777C02218A2B3200D7F77C /* Sources */,
 				71777C03218A2B3200D7F77C /* Frameworks */,
 				71777C04218A2B3200D7F77C /* Resources */,
+				BE52DAF2A59E8A63CA51669D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +171,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		53AE050D19EA56FB8BD70E3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ESP ios Wifi select-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE52DAF2A59E8A63CA51669D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ESP ios Wifi select/Pods-ESP ios Wifi select-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ESP ios Wifi select/Pods-ESP ios Wifi select-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		71777C02218A2B3200D7F77C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -150,6 +218,7 @@
 				71777C26218A4DD600D7F77C /* ssid.swift in Sources */,
 				71777C25218A4DD600D7F77C /* wificell.swift in Sources */,
 				71777C20218A314A00D7F77C /* MainNavController.swift in Sources */,
+				7178AAAF21A495E800D05BE6 /* SocketCom.swift in Sources */,
 				719F8D892190F615006A39D7 /* passwordViewController.swift in Sources */,
 				71777C0A218A2B3200D7F77C /* AppDelegate.swift in Sources */,
 				71777C22218A4DB500D7F77C /* WifiListScreenViewController.swift in Sources */,
@@ -296,6 +365,7 @@
 		};
 		71777C19218A2B3500D7F77C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3569957FE8E93E8F240EB669 /* Pods-ESP ios Wifi select.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +384,7 @@
 		};
 		71777C1A218A2B3500D7F77C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ECF9A66D5F4A5E55905B1AF /* Pods-ESP ios Wifi select.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

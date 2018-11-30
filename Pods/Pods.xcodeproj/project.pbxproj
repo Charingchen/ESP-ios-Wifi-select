@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C41E56A7B8FE4197EE66DF4F0824393 /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886AD7CDE1F5CC782474EF3443C2BA56 /* UDPClient.swift */; };
+		357D79BE3E667E6DD6B15704BD9B74AF /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C073B5E44A489A40FEBFC1148C40D1B5 /* TCPClient.swift */; };
+		3B68741C2B6810DBBC7F19630897F7BF /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 5752BCCE211EF17F51DD509637DDD333 /* yudpsocket.c */; };
+		5526147726912039EAE116F01939EB34 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 21E505997513D83AFD4626EECDFF20D1 /* ytcpsocket.c */; };
+		6E0747753D6C6D4A92709F8C60E79A4B /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7FF9585981F7B619C85C2C6E4DCF91 /* Socket.swift */; };
+		8EC90131935F718E55C0CD496DF30765 /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A3482A89ED856ED2B4645D3BF63D48C /* SwiftSocket-dummy.m */; };
+		A93B651ECE3AF924BD4C053BC4597392 /* Pods-ESP ios Wifi select-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF2A7E828B6EDD6099AB15D451207A2C /* Pods-ESP ios Wifi select-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD7635FF55983E9AFCF3AC2CED31445B /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA6F1113B6CB3FEBB75D760E6B096F87 /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C73317314FC14247B3E6E3977CDB0B16 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED4EEBEF28F2D922BF256FED95DA86C /* Result.swift */; };
+		CBD5BF5AE77B5B9D4D1494A2CD461525 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E431446D233C73FCD1C2EE385854132C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		E6120EDDD2F1EADB5F5FD0533E3E8095 /* Pods-ESP ios Wifi select-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CDA674A190A442E8DAFB6A90CCB39A /* Pods-ESP ios Wifi select-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DC0CD4A1302B5C07182F826EED992DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77DE571355F83716C35019EC0F0A5CFA;
+			remoteInfo = SwiftSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16CDA674A190A442E8DAFB6A90CCB39A /* Pods-ESP ios Wifi select-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ESP ios Wifi select-dummy.m"; sourceTree = "<group>"; };
+		1A3482A89ED856ED2B4645D3BF63D48C /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
+		1BEBEBD138243AED8EFABEAC60CBD00F /* Pods-ESP ios Wifi select.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ESP ios Wifi select.modulemap"; sourceTree = "<group>"; };
+		21E505997513D83AFD4626EECDFF20D1 /* ytcpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
+		247B504D48274CFE6A7F224CD7EDCA14 /* Pods-ESP ios Wifi select.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESP ios Wifi select.release.xcconfig"; sourceTree = "<group>"; };
+		2A8C22ABB955052D9A40050ED163D519 /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSocket.framework; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CCF283CC343265A0F4E3AA38520303D /* Pods-ESP ios Wifi select.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ESP ios Wifi select.debug.xcconfig"; sourceTree = "<group>"; };
+		2E755E372224FE54BF35609667B715B7 /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
+		3F97BC539674480D389902C52CEDBCBF /* Pods-ESP ios Wifi select-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ESP ios Wifi select-frameworks.sh"; sourceTree = "<group>"; };
+		41ABC195FB77C6F55172860F6116DC66 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
+		5752BCCE211EF17F51DD509637DDD333 /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5A8881D5A98E455E7977EF7A33EE35A6 /* Pods-ESP ios Wifi select-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ESP ios Wifi select-acknowledgements.plist"; sourceTree = "<group>"; };
+		796A4D6402FDEE97F1D3D169C6773A96 /* Pods_ESP_ios_Wifi_select.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ESP_ios_Wifi_select.framework; path = "Pods-ESP ios Wifi select.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		848918CF1A34B3F0F22CED0A474702FD /* Pods-ESP ios Wifi select-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ESP ios Wifi select-resources.sh"; sourceTree = "<group>"; };
+		886AD7CDE1F5CC782474EF3443C2BA56 /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
+		8A9A27C833A0D22DCDFF5FE3CB44E25D /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ED4EEBEF28F2D922BF256FED95DA86C /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
+		A40A13E4329A26ACB89397D2CEC4087E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA6F1113B6CB3FEBB75D760E6B096F87 /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
+		B3AE35E8F4C29BF58BB235B754A9B481 /* Pods-ESP ios Wifi select-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ESP ios Wifi select-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C073B5E44A489A40FEBFC1148C40D1B5 /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
+		DD7FF9585981F7B619C85C2C6E4DCF91 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
+		EF2A7E828B6EDD6099AB15D451207A2C /* Pods-ESP ios Wifi select-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ESP ios Wifi select-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1588A5084503871265C8468DDB199F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBD5BF5AE77B5B9D4D1494A2CD461525 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46B66B20C5DF0227C0DEB3F2C27D7429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E431446D233C73FCD1C2EE385854132C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F81F21E9B2EFE1074777E2D2759FF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A44A66ADA1344DA9E7A74277DE6C0CE1 /* SwiftSocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C28560AFEEFACDA39C693B97704EF11 /* Pods-ESP ios Wifi select */ = {
+			isa = PBXGroup;
+			children = (
+				A40A13E4329A26ACB89397D2CEC4087E /* Info.plist */,
+				1BEBEBD138243AED8EFABEAC60CBD00F /* Pods-ESP ios Wifi select.modulemap */,
+				B3AE35E8F4C29BF58BB235B754A9B481 /* Pods-ESP ios Wifi select-acknowledgements.markdown */,
+				5A8881D5A98E455E7977EF7A33EE35A6 /* Pods-ESP ios Wifi select-acknowledgements.plist */,
+				16CDA674A190A442E8DAFB6A90CCB39A /* Pods-ESP ios Wifi select-dummy.m */,
+				3F97BC539674480D389902C52CEDBCBF /* Pods-ESP ios Wifi select-frameworks.sh */,
+				848918CF1A34B3F0F22CED0A474702FD /* Pods-ESP ios Wifi select-resources.sh */,
+				EF2A7E828B6EDD6099AB15D451207A2C /* Pods-ESP ios Wifi select-umbrella.h */,
+				2CCF283CC343265A0F4E3AA38520303D /* Pods-ESP ios Wifi select.debug.xcconfig */,
+				247B504D48274CFE6A7F224CD7EDCA14 /* Pods-ESP ios Wifi select.release.xcconfig */,
+			);
+			name = "Pods-ESP ios Wifi select";
+			path = "Target Support Files/Pods-ESP ios Wifi select";
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				04F81F21E9B2EFE1074777E2D2759FF9 /* Pods */,
+				CD85B585552721551C8CF86CCFBDCD82 /* Products */,
+				BD3D1F5BF14D4111D97DFBCD33BB9F80 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A44A66ADA1344DA9E7A74277DE6C0CE1 /* SwiftSocket */ = {
+			isa = PBXGroup;
+			children = (
+				9ED4EEBEF28F2D922BF256FED95DA86C /* Result.swift */,
+				DD7FF9585981F7B619C85C2C6E4DCF91 /* Socket.swift */,
+				C073B5E44A489A40FEBFC1148C40D1B5 /* TCPClient.swift */,
+				886AD7CDE1F5CC782474EF3443C2BA56 /* UDPClient.swift */,
+				21E505997513D83AFD4626EECDFF20D1 /* ytcpsocket.c */,
+				5752BCCE211EF17F51DD509637DDD333 /* yudpsocket.c */,
+				FFC9005D7761A8434EFF9966F66F9A91 /* Support Files */,
+			);
+			name = SwiftSocket;
+			path = SwiftSocket;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD3D1F5BF14D4111D97DFBCD33BB9F80 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2C28560AFEEFACDA39C693B97704EF11 /* Pods-ESP ios Wifi select */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CD85B585552721551C8CF86CCFBDCD82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				796A4D6402FDEE97F1D3D169C6773A96 /* Pods_ESP_ios_Wifi_select.framework */,
+				2A8C22ABB955052D9A40050ED163D519 /* SwiftSocket.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FFC9005D7761A8434EFF9966F66F9A91 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				41ABC195FB77C6F55172860F6116DC66 /* Info.plist */,
+				2E755E372224FE54BF35609667B715B7 /* SwiftSocket.modulemap */,
+				44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */,
+				1A3482A89ED856ED2B4645D3BF63D48C /* SwiftSocket-dummy.m */,
+				8A9A27C833A0D22DCDFF5FE3CB44E25D /* SwiftSocket-prefix.pch */,
+				AA6F1113B6CB3FEBB75D760E6B096F87 /* SwiftSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSocket";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		68BD3E35A8F6035E05AB71A473D7CB8B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A93B651ECE3AF924BD4C053BC4597392 /* Pods-ESP ios Wifi select-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C6B03E10495F1AE90F7527154EE66995 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD7635FF55983E9AFCF3AC2CED31445B /* SwiftSocket-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5B1657A0BDCFEB3D53FCA049283927F6 /* Pods-ESP ios Wifi select */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D1E8CFBC1652D9BC4D8C890B37E7B3B /* Build configuration list for PBXNativeTarget "Pods-ESP ios Wifi select" */;
+			buildPhases = (
+				4A2A356F01B7DD765DD40BD937710B84 /* Sources */,
+				46B66B20C5DF0227C0DEB3F2C27D7429 /* Frameworks */,
+				68BD3E35A8F6035E05AB71A473D7CB8B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				306E2612D136E6F8E3125FE9E148F47C /* PBXTargetDependency */,
+			);
+			name = "Pods-ESP ios Wifi select";
+			productName = "Pods-ESP ios Wifi select";
+			productReference = 796A4D6402FDEE97F1D3D169C6773A96 /* Pods_ESP_ios_Wifi_select.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		77DE571355F83716C35019EC0F0A5CFA /* SwiftSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED1DB8B79AFCF5B8813B99223AA3FFDF /* Build configuration list for PBXNativeTarget "SwiftSocket" */;
+			buildPhases = (
+				3BC006B156293D59D2E7D00AA5B78BFB /* Sources */,
+				1588A5084503871265C8468DDB199F69 /* Frameworks */,
+				C6B03E10495F1AE90F7527154EE66995 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSocket;
+			productName = SwiftSocket;
+			productReference = 2A8C22ABB955052D9A40050ED163D519 /* SwiftSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CD85B585552721551C8CF86CCFBDCD82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B1657A0BDCFEB3D53FCA049283927F6 /* Pods-ESP ios Wifi select */,
+				77DE571355F83716C35019EC0F0A5CFA /* SwiftSocket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BC006B156293D59D2E7D00AA5B78BFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C73317314FC14247B3E6E3977CDB0B16 /* Result.swift in Sources */,
+				6E0747753D6C6D4A92709F8C60E79A4B /* Socket.swift in Sources */,
+				8EC90131935F718E55C0CD496DF30765 /* SwiftSocket-dummy.m in Sources */,
+				357D79BE3E667E6DD6B15704BD9B74AF /* TCPClient.swift in Sources */,
+				1C41E56A7B8FE4197EE66DF4F0824393 /* UDPClient.swift in Sources */,
+				5526147726912039EAE116F01939EB34 /* ytcpsocket.c in Sources */,
+				3B68741C2B6810DBBC7F19630897F7BF /* yudpsocket.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A2A356F01B7DD765DD40BD937710B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6120EDDD2F1EADB5F5FD0533E3E8095 /* Pods-ESP ios Wifi select-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		306E2612D136E6F8E3125FE9E148F47C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSocket;
+			target = 77DE571355F83716C35019EC0F0A5CFA /* SwiftSocket */;
+			targetProxy = 1DC0CD4A1302B5C07182F826EED992DF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0F583DBADF21D2CC1AD7783AD5E4E8EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CCF283CC343265A0F4E3AA38520303D /* Pods-ESP ios Wifi select.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ESP ios Wifi select/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ESP ios Wifi select/Pods-ESP ios Wifi select.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		49A18A2D0AE438693B34DA78474B1368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSocket;
+				PRODUCT_NAME = SwiftSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AEEDA7922F3C16B20124020A3FAB81B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 247B504D48274CFE6A7F224CD7EDCA14 /* Pods-ESP ios Wifi select.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ESP ios Wifi select/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ESP ios Wifi select/Pods-ESP ios Wifi select.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD8324D57CD462761E218EEA4EA91EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FBDD546539DD0ACC09202A4BA95C9F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44C277FEBD4445FD32195982BF3D6510 /* SwiftSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSocket;
+				PRODUCT_NAME = SwiftSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E12B7268EF0862DFEEB8B6B0BD7C9F4 /* Debug */,
+				CD8324D57CD462761E218EEA4EA91EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D1E8CFBC1652D9BC4D8C890B37E7B3B /* Build configuration list for PBXNativeTarget "Pods-ESP ios Wifi select" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F583DBADF21D2CC1AD7783AD5E4E8EF /* Debug */,
+				AEEDA7922F3C16B20124020A3FAB81B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED1DB8B79AFCF5B8813B99223AA3FFDF /* Build configuration list for PBXNativeTarget "SwiftSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDD546539DD0ACC09202A4BA95C9F1F /* Debug */,
+				49A18A2D0AE438693B34DA78474B1368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

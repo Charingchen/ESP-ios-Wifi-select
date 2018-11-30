@@ -1,0 +1,16 @@
+PODS:
+  - SwiftSocket (2.0.2)
+
+DEPENDENCIES:
+  - SwiftSocket (~> 2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftSocket
+
+SPEC CHECKSUMS:
+  SwiftSocket: 6f4c9c63fbc5c1d61188936bb3c599fd546f40ae
+
+PODFILE CHECKSUM: f3d36ade1db215742fbb74c3e1dca933701c593c
+
+COCOAPODS: 1.5.3

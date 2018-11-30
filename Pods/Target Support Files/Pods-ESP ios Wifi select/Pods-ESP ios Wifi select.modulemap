@@ -1,0 +1,6 @@
+framework module Pods_ESP_ios_Wifi_select {
+  umbrella header "Pods-ESP ios Wifi select-umbrella.h"
+
+  export *
+  module * { export * }
+}

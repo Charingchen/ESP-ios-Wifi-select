@@ -10,6 +10,7 @@ import UIKit
 
 class passwordViewController: UIViewController {
     var wifiInfo: Ssid?
+    let esp32 = socketComm()
     @IBOutlet weak var ssidTextField: UITextView!
     @IBOutlet weak var passwordEntered: UITextField!
     
@@ -23,7 +24,7 @@ class passwordViewController: UIViewController {
     }
     
     @IBAction func sendDidTap(_ sender: Any) {
-        //initiate socket socket transfer
+        esp32.sendingPassword(password: passwordEntered.text!)
         print("Password input: \(passwordEntered.text!) for \(wifiInfo!.id)")
     }
     

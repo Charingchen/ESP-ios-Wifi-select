@@ -20,16 +20,21 @@ class socketComm {
     let sendBad = "Got NO CMD!"
     let startScan = "c1"
     let enableTx = "c2"
+    let sendPswd = "c3"
     let client = TCPClient(address: "192.168.1.1", port: 100)
     
     public func wifiScan() -> [WIFIinfo]{
-        //var dataRev = sendCmd(cmd: startScan)
-        //print(dataRev)
-        //dataRev = sendCmd(cmd: enableTx)
-        //print("dataRecv:\(dataRev)")
-        let dataRecv: String = "3#SSID:fortinet. RSSI:-40. Authmode: unknown.\nSSID:wiiwl. RSSI:-68. Authmode: WIFI_AUTH_WPA2_PSK.\nSSID:kkksi. RSSI:-78. Authmode: WIFI_AUTH_WPA2_PSK.\n"
+        var dataRecv = sendCmd(cmd: startScan)
+        print(dataRecv)
+        dataRecv = sendCmd(cmd: enableTx)
+        print("dataRecv:\(dataRecv)")
+//        let dataRecv: String = "3#SSID:fortinet. RSSI:-40. Authmode: unknown.\nSSID:wiiwl. RSSI:-68. Authmode: WIFI_AUTH_WPA2_PSK.\nSSID:kkksi. RSSI:-78. Authmode: WIFI_AUTH_WPA2_PSK.\n"
         let wifiStruc = prepareSSIDlist(dataRecv: dataRecv)
         return wifiStruc
+    }
+    public func sendingPassword(password: String){
+        let dataRecv = sendCmd(cmd: sendPswd + password)
+        print("dataRecv:\(dataRecv)")
     }
     
     private func sendCmd (cmd: String) -> String{
@@ -97,22 +102,23 @@ class socketComm {
                 let string1 = String(rawdata[..<location])
                 ssidList.append(string1.replacingOccurrences(of: "\n", with: " "))
                 rawdata.removeSubrange(rawdata.startIndex..<location)
-                print("partial substring1:\(ssidList[i])")
+                print("partial substring\(i):\(ssidList[i])")
                 
             }
             for info in ssidList{
+                //create a tempString varable to perform string manipulation
                 var tempString = info
                 var colonlocation = tempString.index(after:tempString.index(of:":") ?? tempString.endIndex)
-                var spacelocation = tempString.index(before:tempString.index(of:".") ?? tempString.endIndex)
-                let ssid = String(tempString[colonlocation...spacelocation])
-                tempString.removeSubrange(tempString.startIndex...tempString.index(after: spacelocation))
+                var dotlocation = tempString.index(before:tempString.index(of:".") ?? tempString.endIndex)
+                let ssid = String(tempString[colonlocation...dotlocation])
+                tempString.removeSubrange(tempString.startIndex...tempString.index(after: dotlocation))
                 colonlocation = tempString.index(after:tempString.index(of:":") ?? tempString.endIndex)
-                spacelocation = tempString.index(before:tempString.index(of:".") ?? tempString.endIndex)
-                let rssi = String(tempString[colonlocation...spacelocation])
-                tempString.removeSubrange(tempString.startIndex...tempString.index(after: spacelocation))
+                dotlocation = tempString.index(before:tempString.index(of:".") ?? tempString.endIndex)
+                let rssi = String(tempString[colonlocation...dotlocation])
+                tempString.removeSubrange(tempString.startIndex...tempString.index(after: dotlocation))
                 colonlocation = tempString.index(after:tempString.index(of:":") ?? tempString.endIndex)
-                spacelocation = tempString.index(before:tempString.index(of:".") ?? tempString.endIndex)
-                let auth = String(tempString[colonlocation...spacelocation])
+                dotlocation = tempString.index(before:tempString.index(of:".") ?? tempString.endIndex)
+                let auth = String(tempString[colonlocation...dotlocation])
                 let newinfo = WIFIinfo(SSID: ssid, RSSI: rssi, AUTH: auth)
                 wifilist.append(newinfo)
             }

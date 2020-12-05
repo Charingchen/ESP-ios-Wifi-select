@@ -6,6 +6,6 @@ target 'ESP ios Wifi select' do
   use_frameworks!
 
   # Pods for ESP ios Wifi select
-pod 'SwiftSocket', '~> 2.0'
+pod 'SwiftSocket'
 
 end

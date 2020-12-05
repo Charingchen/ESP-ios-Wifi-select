@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "77DE571355F83716C35019EC0F0A5CFA"
-               BuildableName = "SwiftSocket.framework"
-               BlueprintName = "SwiftSocket"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "71777C05218A2B3200D7F77C"
+               BuildableName = "ESP ios Wifi select.app"
+               BlueprintName = "ESP ios Wifi select"
+               ReferencedContainer = "container:ESP ios Wifi select.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "71777C05218A2B3200D7F77C"
+            BuildableName = "ESP ios Wifi select.app"
+            BlueprintName = "ESP ios Wifi select"
+            ReferencedContainer = "container:ESP ios Wifi select.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "77DE571355F83716C35019EC0F0A5CFA"
-            BuildableName = "SwiftSocket.framework"
-            BlueprintName = "SwiftSocket"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "71777C05218A2B3200D7F77C"
+            BuildableName = "ESP ios Wifi select.app"
+            BlueprintName = "ESP ios Wifi select"
+            ReferencedContainer = "container:ESP ios Wifi select.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -60,6 +70,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "71777C05218A2B3200D7F77C"
+            BuildableName = "ESP ios Wifi select.app"
+            BlueprintName = "ESP ios Wifi select"
+            ReferencedContainer = "container:ESP ios Wifi select.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

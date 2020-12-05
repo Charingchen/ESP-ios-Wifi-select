@@ -24,7 +24,7 @@ class passwordViewController: UIViewController {
     }
     
     @IBAction func sendDidTap(_ sender: Any) {
-        esp32.sendingPassword(password: passwordEntered.text!)
+        esp32.sendingPassword(password: passwordEntered.text!,ssid: wifiInfo!.id)
         print("Password input: \(passwordEntered.text!) for \(wifiInfo!.id)")
     }
     

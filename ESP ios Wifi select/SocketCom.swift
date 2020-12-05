@@ -32,8 +32,8 @@ class socketComm {
         let wifiStruc = prepareSSIDlist(dataRecv: dataRecv)
         return wifiStruc
     }
-    public func sendingPassword(password: String){
-        let dataRecv = sendCmd(cmd: sendPswd + password)
+    public func sendingPassword(password: String, ssid: String){
+        let dataRecv = sendCmd(cmd: sendPswd + "ssid:" + ssid + ".pwd:" + password)
         print("dataRecv:\(dataRecv)")
     }
     

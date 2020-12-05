@@ -22,6 +22,7 @@ class MainNavController: UIViewController {
     @IBOutlet weak var wifiScanButton: UIButton!
     @IBOutlet weak var instruction: UITextView!
     
+    // First button press, send user connect to esp32 wifi AP
     @IBAction func connectDidTap(_ sender: Any) {
         UIApplication.shared.open(URL(string:"App-Prefs:root=WIFI")!)
         
@@ -92,5 +93,7 @@ class MainNavController: UIViewController {
         }
         return tempssid
     }
+    
+    @IBAction func restartFromBegin (_ sender: UIStoryboardSegue ){}
 
 }
